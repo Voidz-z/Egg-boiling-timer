@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h3>Time right now:</h3>
-    <p id="demo"></p>
-    <div>
-    <h1> Timer  </h1>
-    
-    <div id="timer">
-        00:00:00
-    </div>
-    <button onclick="start()">Start</button>
-</div>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="index.js"></script>
+    <title>Egg boiling timer</title>
+</head>
+
+<body>
+    <div class="timedisplay">
+        <h3 id="clock"></h3>
+    </div>
+    <div>
+        <h1>Egg Boiling Timer</h1>
+        
+            <h2 id="timer">00:00</h2>
+            <div class="center">
+            <div class="buttons">
+                <button id="startButton">Start 5sec timer</button>
+                <button id="runnyButton">Runny Yolk (6 min)</button>
+                <button id="pauseButton" title="Pause"><i class="fas fa-pause"></i></button>
+                <button id="clearButton" title="Reset"><i class="fas fa-rotate-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="boiling-expl">
+
+        <h1>How long to boil eggs </h1>
+
+        <ul>
+            <img src="photos\How-Long-To-Boil-Eggs-Chart-Timer-720x1080.webp" alt="">
+            <li><strong>6 minutes:</strong> A liquidy yolk and soft white. This is perfect for eggs served in an egg
+                cup.</li>
+            <li><strong>6 1/2 minutes:</strong> A soft, jammy yolk. This is my favorite for eggs on toast or soft boiled
+                eggs on a salad.</li>
+            <li><strong>8 minutes:</strong> A medium yolk that’s slightly soft but firm enough to hold its own.</li>
+            <li><strong>10 minutes:</strong> The early stages of a hard boiled egg, with just a smidge of softness in
+                the middle.</li>
+            <li><strong>12 minutes:</strong> A hard boiled egg with a lighter yolk.</li>
+            <li><strong>14 minutes:</strong> Your traditional hard boiled egg with the lightest yolk and a firm white,
+                but not overcooked.</li>
+        </ul>
+        <a target="_blank"
+            href="https://downshiftology.com/recipes/perfect-soft-boiled-hard-boiled-eggs/">https://downshiftology.com/recipes/perfect-soft-boiled-hard-boiled-eggs/</a>
+    </div>
+
 </body>
+
 </html>
